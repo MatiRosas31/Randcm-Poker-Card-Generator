@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Rigo with Vanilla.js</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="shortcut icon" href="./4geeks.ico" />
+  </head>
+  <body class="position-relative bg-success vh-100">
+    <!-- Inputs para el ancho y alto de la carta -->
+    <div class="inputs-container position-absolute inputforms bg-dark btn">
+      <label class="fw-bolder text-light" for="cardWidth">Ancho:</label>
+      <input type="number" id="cardWidth" placeholder="300" />
+      <label class="fw-bolder text-light" for="cardHeight">Alto:</label>
+      <input type="number" id="cardHeight" placeholder="400" />
+      <button id="applySize" class="btn btn-danger ms-1">
+        Aplicar tamaño
+      </button>
+    </div>
+
+    <div id="naipe" class="card position-absolute">
+      <div id="cornerdivtop" class="corner top text-center">
+        <span id="cornerspantop">♥</span>
+      </div>
+
+      <div class="middle position-absolute top-50 start-50 translate-middle">
+        <span id="midspannumber">3</span>
+      </div>
+      <div
+        id="cornerdivbot"
+        class="corner bottom text-center position-absolute"
+      >
+        <span id="cornerspanbot">♥</span>
+      </div>
+    </div>
+    <!-- Botón debajo de la carta -->
+    <button id="btngencard" class="btn btn-dark position-absolute button">
+      Generate Random Car
+    </button>
+    <button id="flipcard" class="btn btn-danger position-absolute buttonflip">
+      Flip the Card!
+    </button>
+  </body>
+</html>

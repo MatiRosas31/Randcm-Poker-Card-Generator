@@ -1,0 +1,73 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  top: 75px;
+  left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.corner {
+  position: absolute;
+  font-family: "Arial", sans-serif;
+  font-size: 100px;
+}
+
+.top {
+  top: -20px;
+  left: 10px;
+}
+
+.bottom {
+  bottom: -20px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.middle {
+  font-family: "Times New Roman";
+  font-size: 140px;
+}
+
+.cornerred {
+  color: red;
+}
+
+.button {
+  top: 465px;
+  left: 70px;
+  margin-top: 30px;
+}
+
+.buttonflip {
+  top: 510px;
+  left: 99px;
+  margin-top: 30px;
+}
+
+.flipcard {
+  transform: rotateY(180deg);
+  transition: transform 0.6s;
+}
+
+.inputforms {
+  top: 5px;
+  left: 20px;
+  /* background-color: rgba(80, 201, 80, 0.295); */
+  padding-left: 5px;
+  /* box-shadow: 50%; */
+}
+
+.buttonpurple {
+  background-color: rgb(129, 37, 129);
+  color: white;
+}
